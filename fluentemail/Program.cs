@@ -8,8 +8,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddFluentEmail("troy.wintheiser9@ethereal.email")
-
-        .AddRazorRenderer()
+                .AddRazorRenderer()
                 .AddMailKitSender(new FluentEmail.MailKitSmtp.SmtpClientOptions
                 {
                     Server = "smtp.ethereal.email",
